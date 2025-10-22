@@ -27,27 +27,18 @@ Volg deze stappen om de applicatie op je lokale machine te installeren en uit te
 ```bash
 1. Clone de repository naar je lokale machine:
 
-git clone https://git.fhict.nl/I511976/crimequest.git
+git clone https://github.com/Cybrance/CrimeQuest-Login-Signup-Mongodb-bcrypt
 
 Installeer de dependencies van de package.json file
-# Installeer Express.js
-npm install express@4.18.2
 
-# Installeer Handlebars (hbs)
-npm install hbs@4.2.0
-
-# Installeer MongoDB
-npm install mongod@2.0.0
-
-# Installeer Mongoose
-npm install mongoose@8.0.0
+npm install
 ```
 
 ## Gebruik
 
-**Registratie**: Bezoek `http://localhost:3000/signup`. Om je te registreren maak je een account met je naam, e-mail en wachtwoord. De gegevens worden opgeslagen in de MongoDB database.
+**Registratie**: Bezoek `http://localhost:3001/signup`. Om je te registreren maak je een account met je naam, e-mail en wachtwoord. De gegevens worden opgeslagen in de MongoDB database.
 
-**Inloggen**: Ga naar `http://localhost:3000/`log in met je gebruikersnaam en wachtwoord als de gegevens overeenkomen met wat er in de database staat word je doorgestuurd naar de home pagina.
+**Inloggen**: Ga naar `http://localhost:3001/`log in met je gebruikersnaam en wachtwoord als de gegevens overeenkomen met wat er in de database staat word je doorgestuurd naar de home pagina.
 
 ## Structuur van de Repository
 
@@ -55,8 +46,8 @@ npm install mongoose@8.0.0
 
   - `Mongodb.js`
   - `index.js`
-  - `node_modules/` (dit zijn de modules die nodig zijn voor de applicatie deze worden automatisch geïnstalleerd met de dependencies)
-  - `node.gitignore` (dit voorkomt het pushen van onnodige bestanden tijdens de samenwerking)
+  - `.env`
+    
 
 - `Public/`: Hierin zitten de css files
 
