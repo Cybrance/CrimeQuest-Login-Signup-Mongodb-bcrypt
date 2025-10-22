@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+ rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.typekit.net/fyn7ocs.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login CrimeQuest</title>
+    <link rel="stylesheet" type="text/css" href="/Public/login.css" />
+  </head>
+  <body>
+    <header>
+      <div class="NavBar">
+        <h1>CrimeQuest</h1></div>
+    </header>
+    <div class="box">
+
+      <div class="credentials">
+        <h2>Inloggen</h2>
+      </div>
+
+       {{#if error}}
+  <p class="errorMessage">{{error}}</p>
+{{/if}}
+
+    <form action="/login" method="post">
+        <div class="formitem">
+            {{#if field}}
+                <input
+                    type="text"
+                    name="{{field}}"
+                    placeholder="Vul je e-mailadres of gebruikersnaam in"
+                    class="inputbox errorField"
+                />
+            {{else}}
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Vul je e-mailadres of gebruikersnaam in"
+                    class="inputbox"
+                />
+            {{/if}}
+        </div>
+
+        <div class="formitem">
+            <input
+                type="password"
+                name="password"
+                placeholder="Voer je wachtwoord in"
+                class="inputbox {{#if field}}error-field{{/if}}"
+            />
+        </div>
+
+        <input type="submit" value="Inloggen" class="inlogbutton" />
+    </form>
+           <span class="divider">OF
+      </span>
+      <button type="button" class="login-with-google-btn" disabled>
+        Registreer met Google
+      </button>
+        <button type="button" class="login-with-facebook-btn" disabled>
+        Registreer met Facebook
+      </button>
+      <p class="wachtwoordVergeten"><a href="/" >Wachtwoord vergeten? </a></p>
+    </div>
+
+    <div class="box2">
+      <p>Nieuw bij CrimeQuest? <a href="/signup">Meld je aan</a></p>
+    </div>
+  </body>
+</html>
