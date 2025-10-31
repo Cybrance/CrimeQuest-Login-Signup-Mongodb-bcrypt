@@ -1,67 +1,36 @@
-# CrimeQuest registratie systeem ReadMe
+# CrimeQuest Registration System ReadMe
 
-Welkom, bij de ReadMe van het registratie systeem bij CrimeQuest registratie systeem! Dit is een Node.js-applicatie die is gebouwd om gebruikersregistratie en login mogelijk te maken. Gebruikers kunnen een account aanmaken en inloggen.
+Welcome to the ReadMe for the **CrimeQuest Registration System**!  
+This is a **Node.js** application built to allow user registration and login.  
+Users can create an account and log in securely.
 
-## Inhoudsopgave
+## Table of Contents
 
-- [Technologieën](#technologieën)
-- [Installatie](#installatie)
-- [Gebruik](#gebruik)
-- [Structuur van de Repository](#structuur-van-de-repository)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Repository Structure](#repository-structure)
+- [Security & Sensitive Data](#security--sensitive-data)
+- [Author](#author)
 
-## Technologieën
+## Technologies
 
-Dit project maakt gebruik van de volgende technologieën en bibliotheken:
+This project uses the following technologies and libraries:
 
-- **Node.js**: De serverzijde van de applicatie is geschreven in Node.js.
-- **Express.js**: Express wordt hier gebruikt als het framework om HTTP-verzoeken te verwerken.
-- **MongoDB en Mongoose**: MongoDB wordt gebruikt als de database voor de gebruikersgegevens,
-  Mongoose wordt gebruikt voor de interactie met de database.
-- **Handlebars (hbs)**: Handlebars worden gebruikt als de webpagina's om alles te weergeven.
-- **Andere**: Bekijk het `package.json`-bestand voor een lijst met andere modules (dependencies) die in het project worden gebruikt.
+- **Node.js** – The server-side of the application is built using Node.js.  
+- **Express.js** – Express is used as the framework to handle HTTP requests.  
+- **MongoDB & Mongoose** – MongoDB is used as the database for storing user data,  
+  and Mongoose is used to interact with the database.  
+- **Handlebars (hbs)** – Handlebars is used as the templating engine for rendering web pages.  
+- **Other** – See the `package.json` file for a full list of dependencies used in the project.
 
-## Installatie
+## Installation
 
-Volg deze stappen om de applicatie op je lokale machine te installeren en uit te voeren:
+Follow these steps to install and run the application on your local machine:
 
 ```bash
-1. Clone de repository naar je lokale machine:
-
+1. Clone the repository to your local machine:
 git clone https://github.com/Cybrance/CrimeQuest-Login-Signup-Mongodb-bcrypt
 
-Installeer de dependencies van de package.json file
-
+2. Install all dependencies listed in package.json:
 npm install
-```
-
-## Gebruik
-
-**Registratie**: Bezoek `http://localhost:3001/signup`. Om je te registreren maak je een account met je naam, e-mail en wachtwoord. De gegevens worden opgeslagen in de MongoDB database.
-
-**Inloggen**: Ga naar `http://localhost:3001/`log in met je gebruikersnaam en wachtwoord als de gegevens overeenkomen met wat er in de database staat word je doorgestuurd naar de home pagina.
-
-## Structuur van de Repository
-
-- `API/`: hier zitten de volgende bestanden in:
-
-  - `Mongodb.js`
-  - `index.js`
-  - `.env`
-    
-
-- `Public/`: Hierin zitten de css files
-
-  - `login.css`
-  - `signup.css`
-
-- `Templates/`: In deze folder zitten de handlebars (`.hbs`) files:
-  - `login.hbs`
-  - `signup.hbs`
-
-## Veiligheid & Gevoelige Data
-
-Let op: Sla nooit gevoelige data zoals API keys, wachtwoorden of geheime configuratiebestanden op in de repository. Gebruik een `.env` bestand voor gevoelige gegevens en zorg dat `.env` en andere gevoelige bestanden in `.gitignore` staan zodat ze niet worden geüpload naar versiebeheer.
-
-## Auteur
-
-**Semmy Verdonschot**
