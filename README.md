@@ -30,7 +30,7 @@ Follow these steps to install and run the application on your local machine:
 
 ```bash
 1. Clone the repository to your local machine:
-git clone https://github.com/Cybrance/CrimeQuest-Login-Signup-Mongodb-bcrypt
+git clone https://github.com/semmyverdonschot/CrimeQuest-Login-Signup-Mongodb-bcrypt
 
 2. Install all dependencies listed in package.json:
 npm install
